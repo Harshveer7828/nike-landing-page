@@ -1,0 +1,479 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+#shoe{
+    position: absolute;
+    transform: rotateY(180deg);
+    rotate: -20deg;
+    height: 270px;
+    top: 35%;
+    left: -50%;
+    animation-delay: 0.6s;
+    z-index: 1;
+    animation-name: shoeanime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes shoeanime {
+    0%{
+        left: -50%;
+
+    }
+    100%{
+        left: 10%;
+    }
+    
+}
+#logo{
+    position: absolute;
+    rotate: 0deg;
+    left: 7%;
+    top: 23%;
+    width: 60%;
+    filter: brightness(1);
+    z-index: 0;
+    animation-name: logoanime;
+    animation-duration: 1s;
+
+}
+@keyframes logoanime {
+    0%{
+        left: -50%;
+
+    }
+    100%{
+        left: 7%;
+    }
+    
+}
+#page1 #head{
+    position: absolute;
+    font-size: 90px;
+    z-index: 0;
+    color: white;
+    letter-spacing: 70px;
+    font-weight: 400;
+    top: 50%;
+    left: -50%;
+    font-size: 200px;
+    animation-name: headanime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes headanime {
+    0%{
+        left: -50%;
+
+    }
+    100%{
+        left: 35%;
+    }
+    
+}
+#sideimg{
+    height: 70%;
+    width: 10%;
+    position: absolute;
+    right: -50%;
+    top: 25%;
+    animation-name: sideanime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes sideanime {
+    0%{
+        right: -50%;
+
+    }
+    100%{
+        right:10%;
+    }
+    
+}
+#img1{
+    height: 20%;
+    width: 90%;
+    background-color: rgba(73, 71, 71, 0.271);
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+#img1 img{
+    position: absolute;
+    left:-20%;
+    top: 2%;
+    height:80px;
+    
+    transform: rotateY(180deg);
+}
+
+#img2{
+    height: 20%;
+    width:90%;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    background-color: #ded9d7;
+}
+#img2 img{
+    transform: rotateY(180deg);
+    position: absolute;
+    left:-20%;
+    top: 30%;
+    height:80px;
+}
+#img3{
+    height: 20%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.442);
+    border-radius:20px;
+}
+#img3 img{
+    position: absolute;
+    left:-20%;
+    top: 58%;
+   
+    height:80px;
+}
+
+/* .smallimg{
+    display: flexbox;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    background-color: black;
+
+} */
+
+#left{
+    height: 100%;
+    width: 22%;
+    background: linear-gradient(to bottom,#cdc1bc,#e0b0a6,#eca27d);
+}
+#left>img{
+    z-index: 2;
+}
+#links{
+    padding: 20px 40px;
+    margin-left: 70px;
+    position: absolute;
+    background-color: #DBD0CC;
+    font-size: 12px;
+    left: -50%;
+    margin-top:50px ;
+    animation-name: linksanime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes linksanime {
+    0%{
+        left: -50%;
+
+    }
+    100%{
+        left: 5%;
+    }
+    
+}
+#links a{
+    text-decoration: none;
+    color: rgb(54, 51, 51);
+    font-weight: 300;
+}
+#links i{
+    padding: 0 6px;
+}
+#leftbottom{
+    color: white;
+    padding-left:30px ;
+    margin-top: 600px;
+    transform: translateX(-100%);
+    animation-name: bottomleftanime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.2s;
+}
+@keyframes bottomleftanime {
+    0%{
+        transform: translateX(-100%);
+
+    }
+    100%{
+       transform: translateX(0%);
+    }
+    
+}
+
+#leftbottom h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+#row1{
+    display: flex;
+    gap: 40px;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+#row1 span{
+    background-color: rgba(255, 255, 255, 0.267);
+    padding: 0 7px;
+}
+#row2{
+    display: flex;
+    gap: 47px;
+    font-size: 15px;
+}
+#right{
+    height: 100%;
+    width: 80%;
+    background: linear-gradient(to bottom,#beaea6,#c6b8b8);
+}
+#navright{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px;
+    transform: translateY(-100%);
+    animation-name: navrightanime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes navrightanime {
+    0%{
+        transform: translateY(-100%);
+
+    }
+    100%{
+       transform: translateY(0%);
+    }
+    
+}
+
+#navright input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    height: 30px;
+    width: 60%;
+    margin-top: 45px;
+}
+#navright input::placeholder{
+    color: rgba(255, 255, 255, 0.736);
+    letter-spacing: 2px;
+}
+#searchinput{
+    color: rgba(255, 255, 255, 0.662);
+    width: 30%;
+}
+#text{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: right;
+    padding-right: 90px;
+    margin-top: 30px;
+}
+#text h1{
+    font-weight: 300;
+    letter-spacing: 12px;
+
+
+}
+#text h2{
+    font-weight: 600;
+    letter-spacing: 0px;
+    font-size: 30px;
+}
+
+#rightbottom{
+    margin-top: 400px;
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(110%);
+    animation-name: bottomlastanime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bottomlastanime {
+    0%{
+        transform: translateY(110%);
+
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+#pricetag h3{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+#pricetag h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+}
+#pricetag button{
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    background-color: rgb(12, 26, 68);  
+    /* padding: 15px 30px;   */
+    color: white;
+    font-size: 13px;  
+    border: none; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px 30px;
+    
+    
+}
+#pricetag button h3{
+    color: red;
+    padding-right: 6px;
+    font-size: 25px;
+}
+
+
+#color h3{
+    color: white;
+}
+#choose{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+#choose #red
+{
+    background:linear-gradient(to left,rgb(0, 183, 255),rgba(225, 224, 224, 0.595),rgb(0, 0, 0));
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+#choose #blue
+{
+    background:linear-gradient(to left,rgb(0, 0, 0),rgba(255, 255, 255, 0.595),white);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+#choose #green
+{
+    background:linear-gradient(to left,rgb(255, 162, 0),rgba(255, 255, 255, 0.595),rgba(255, 255, 255, 0.437));
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+#choose #yellow
+{
+    background:linear-gradient(to left,red,rgba(255, 255, 255, 0.595),whi8);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+
+#leftimggirl img {
+    height: 130px;
+    width: 110px;
+    position: absolute;
+    left: -50%;
+    top: 20%;
+    animation-name: girlanime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes girlanime {
+    0%{
+        left: -50%;
+
+    }
+    100%{
+        left: 9.55% ;
+    }
+    
+}
+#midtext{
+    width: 8vmax;
+    height: 3vmax;
+    text-align: center;
+    padding: 13px 0px;
+    position: absolute;
+    left: 16.65%;
+    color: white;
+    background-color: #0000005d;
+    top:20% ;
+
+}
+#midtext h3{
+    font-size: 13px;
+    font-weight: 400;
+}
+#navlinks{
+    display: flex;
+    gap: 3px;
+    margin-left: 70px;
+    transform: translateY(-100%);
+    animation-name: navlinksanime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navlinksanime {
+    0%{
+        transform: translateY(-1010%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+
+#navlinks a{
+    font-size: 12px;
+    width: 100px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+
+}
+#navlinks a:nth-child(2)
+{
+
+    padding: 10px ;
+
+    border-radius: 8px;
+    margin-top: -8px;
+    background-color: rgba(0, 0, 0, 0.349);
+}
